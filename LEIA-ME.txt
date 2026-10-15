@@ -1,15 +1,16 @@
-JOHNNY BIGODES — SITE COM DESCRIÇÕES ATUALIZADAS
+JOHNNY BIGODES — ESTILO APROVADO (RETRO PREMIUM ART DÉCO)
 
-Conteúdo: 8 referências (Dirty Mind 300 ml e 1000 ml, Fuck Gravity, Foamzilla, Big Ego, Messy Bastard, Sticky Bastard, Holy Cream). A pasta assets inclui as imagens.
+Este site foi recriado a partir da imagem de referência aprovada (barbearia escura, tipografia clássica, oito produtos em vitrine creme).
+O endereço público e QR code NÃO mudam: https://johnnybigodeslousada.github.io/
 
-COMO PUBLICAR NO GITHUB
-1. Extrair este ZIP.
-2. Abrir o repositório johnnybigodeslousada.github.io.
-3. Substituir o ficheiro index.html na raiz.
-4. Carregar a pasta assets mantendo a sua estrutura.
-5. Confirmar alterações e aguardar a publicação.
+PUBLICAR NO GITHUB
+1. Extrai este ZIP para uma pasta no teu computador.
+2. Abre github.com/johnnybigodeslousada/johnnybigodeslousada.github.io
+3. Adicionar arquivo > carregar ficheiros.
+4. Envia o ficheiro index.html e a pasta assets, sem a pasta exterior.
+5. Confirma alterações; aguarda até o GitHub Pages atualizar.
+6. Abre a página no telemóvel, atualiza e verifica os 8 produtos.
 
-O QR code continua igual se o endereço https://johnnybigodeslousada.github.io/ for mantido.
-
-As descrições foram adaptadas das capturas do catálogo SalonID enviadas em outubro de 2026.
-IMPORTANTE: o catálogo e a imagem da embalagem Dirty Mind apresentam referências diferentes aos ingredientes (cafeína e aloé vera no catálogo; óleo de menta na embalagem). Confirmar composição final e todas as alegações com o fornecedor antes de divulgar comercialmente.
+O catálogo é de apresentação, sem compra online, carrinho ou pagamentos.
+Os vídeos continuam em preparação. Mantém o endereço igual para preservar o QR code.
+As embalagens foram fornecidas como imagens de apresentação; compara sempre os ingredientes com os rótulos finais.
