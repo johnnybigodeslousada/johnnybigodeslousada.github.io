@@ -1,30 +1,29 @@
-JOHNNY BIGODES — SITE GRATUITO / QR ÚNICO
+JOHNNY BIGODES — VERSÃO FINAL COM 8 REFERÊNCIAS
 
-ENDEREÇO CODIFICADO NO QR:
-https://johnnybigodeslousada.github.io/
+SITE: https://johnnybigodeslousada.github.io/
+QR: Mantém-se igual. Não é necessário mudar nem imprimir novo QR.
 
-ESTE ENDEREÇO AINDA NÃO ESTÁ REGISTADO NEM PUBLICADO.
-NÃO ENVIAR O QR PARA IMPRESSÃO SEM PRIMEIRO CONFIRMAR QUE O SITE ABRE.
+PRODUTOS INCLUÍDOS (8 REFERÊNCIAS):
+1. DIRTY MIND — Champô 300 ml
+2. DIRTY MIND — Champô 1000 ml
+3. FUCK GRAVITY — Laca 300 ml
+4. FOAMZILLA — Mousse 300 ml
+5. BIG EGO — Gel 150 ml
+6. MESSY BASTARD — Pasta 100 ml
+7. STICKY BASTARD — Fibra 100 ml
+8. HOLY CREAM — Creme 100 ml
 
-COMO PUBLICAR GRATUITAMENTE:
-1. Em https://github.com/signup cria uma conta com o nome exato johnnybigodeslousada.
-   O nome tem de estar disponível. Se não estiver, fala comigo antes de imprimir.
-2. Em https://github.com/new cria um repositório público chamado EXATAMENTE:
-   johnnybigodeslousada.github.io
-3. Descompacta o ZIP e carrega para esse repositório, na raiz:
-   index.html, pasta assets e ficheiro .nojekyll (opcional).
-   NÃO carregues o ZIP intacto: carrega os ficheiros extraídos.
-4. No repositório, vai a Settings > Pages > Build and deployment:
-   Source: Deploy from a branch; Branch: main; folder: /(root); Save.
-5. Aguarda a publicação (pode demorar alguns minutos). Abre o endereço acima
-   no telemóvel e testa os vídeos e o QR.
-6. Só depois de confirmares que funciona deves enviar o QR para a gráfica.
+Não constam do catálogo: No Yellow, Curly Girl, Deluxe e Repair.
 
-O SITE CONTÉM:
-- Coleção Cera Matte e Cera com Brilho.
-- Guias de aplicação animados ilustrativos, ainda não filmagens reais do produto.
-- Informação de que a venda é apenas na Barbearia Johnny Bigodes, Lousada.
-- Design pensado para telemóvel.
+COMO PUBLICAR NO GITHUB:
+1. Descarrega e extrai o ZIP no computador.
+2. Vai a github.com/johnnybigodeslousada/johnnybigodeslousada.github.io
+3. Atualiza o index.html da raiz e adiciona todos os ficheiros da pasta assets,
+   mantendo essa pasta. Podes apagar os ficheiros antigos que não são usados,
+   mas não é necessário para o site funcionar.
+4. Clica Confirmar alterações e aguarda a publicação.
+5. Abre o endereço e atualiza a página para testar, de preferência também no telemóvel.
 
-Quando enviares as fotos dos produtos reais, podemos mudar as imagens e vídeos
-sem alterar o QR, desde que o endereço continue exatamente igual.
+NÃO FAZ VENDA ONLINE. Compra apenas na Barbearia Johnny Bigodes, Lousada.
+Os vídeos de aplicação reais ainda estão por criar; o site indica "em preparação".
+A foto da capa é uma composição promocional ilustrativa baseada nas embalagens fornecidas.
