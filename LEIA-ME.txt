@@ -1,29 +1,15 @@
-JOHNNY BIGODES — VERSÃO FINAL COM 8 REFERÊNCIAS
+JOHNNY BIGODES — SITE COM DESCRIÇÕES ATUALIZADAS
 
-SITE: https://johnnybigodeslousada.github.io/
-QR: Mantém-se igual. Não é necessário mudar nem imprimir novo QR.
+Conteúdo: 8 referências (Dirty Mind 300 ml e 1000 ml, Fuck Gravity, Foamzilla, Big Ego, Messy Bastard, Sticky Bastard, Holy Cream). A pasta assets inclui as imagens.
 
-PRODUTOS INCLUÍDOS (8 REFERÊNCIAS):
-1. DIRTY MIND — Champô 300 ml
-2. DIRTY MIND — Champô 1000 ml
-3. FUCK GRAVITY — Laca 300 ml
-4. FOAMZILLA — Mousse 300 ml
-5. BIG EGO — Gel 150 ml
-6. MESSY BASTARD — Pasta 100 ml
-7. STICKY BASTARD — Fibra 100 ml
-8. HOLY CREAM — Creme 100 ml
+COMO PUBLICAR NO GITHUB
+1. Extrair este ZIP.
+2. Abrir o repositório johnnybigodeslousada.github.io.
+3. Substituir o ficheiro index.html na raiz.
+4. Carregar a pasta assets mantendo a sua estrutura.
+5. Confirmar alterações e aguardar a publicação.
 
-Não constam do catálogo: No Yellow, Curly Girl, Deluxe e Repair.
+O QR code continua igual se o endereço https://johnnybigodeslousada.github.io/ for mantido.
 
-COMO PUBLICAR NO GITHUB:
-1. Descarrega e extrai o ZIP no computador.
-2. Vai a github.com/johnnybigodeslousada/johnnybigodeslousada.github.io
-3. Atualiza o index.html da raiz e adiciona todos os ficheiros da pasta assets,
-   mantendo essa pasta. Podes apagar os ficheiros antigos que não são usados,
-   mas não é necessário para o site funcionar.
-4. Clica Confirmar alterações e aguarda a publicação.
-5. Abre o endereço e atualiza a página para testar, de preferência também no telemóvel.
-
-NÃO FAZ VENDA ONLINE. Compra apenas na Barbearia Johnny Bigodes, Lousada.
-Os vídeos de aplicação reais ainda estão por criar; o site indica "em preparação".
-A foto da capa é uma composição promocional ilustrativa baseada nas embalagens fornecidas.
+As descrições foram adaptadas das capturas do catálogo SalonID enviadas em outubro de 2026.
+IMPORTANTE: o catálogo e a imagem da embalagem Dirty Mind apresentam referências diferentes aos ingredientes (cafeína e aloé vera no catálogo; óleo de menta na embalagem). Confirmar composição final e todas as alegações com o fornecedor antes de divulgar comercialmente.

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#181817">
-<meta name="description" content="Descobre os oito produtos Johnny Bigodes: champô Dirty Mind, laca Fuck Gravity, mousse Foamzilla, gel Big Ego, pasta Messy Bastard, fibra Sticky Bastard e creme Holy Cream. Vídeos e conselhos de utilização. Venda exclusiva na barbearia, em Lousada.">
+<meta name="description" content="Descobre os oito produtos Johnny Bigodes: champô Dirty Mind, laca Fuck Gravity, mousse Foamzilla, gel Big Ego, pasta Messy Bastard, fibra Sticky Bastard e creme Holy Cream. Benefícios, ingredientes, modo de usar e futuros vídeos de aplicação. Venda exclusiva na barbearia, em Lousada.">
 <meta property="og:title" content="Johnny Bigodes — Coleção de Produtos">
 <meta property="og:description" content="Conhece a coleção, descobre cada produto e encontra-os na Barbearia Johnny Bigodes, Lousada.">
 <meta property="og:type" content="website">
@@ -37,6 +37,26 @@ dialog{border:0;padding:0;max-width:860px;width:min(860px,calc(100vw - 24px));ma
 .hero-bottom{right:20px;bottom:15px;font-size:9px;text-shadow:0 1px 8px #0009}
 @media(max-width:800px){.hero-art{min-height:520px}.hero-collection{width:100%;height:100%;max-height:none;margin:0;object-fit:cover}}
 @media(max-width:550px){.hero-art{min-height:365px}.hero-collection{width:100%;height:100%;max-height:none;margin:0;object-fit:cover}.hero-corner{font-size:9px}.hero-bottom{font-size:8px}}
+
+/* melhorias da versão informativa do catálogo */
+.card-teaser{font-size:12px;line-height:1.5;color:#655d53;margin:0 0 13px;min-height:35px}
+.product-bottom .kind{margin-bottom:3px}
+.ingredients-list,.highlight-list{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.ingredient-chip,.highlight-chip{display:inline-block;padding:8px 10px;font-size:11px;line-height:1.3;border-radius:3px}
+.ingredient-chip{background:#eadfce;color:#373029}
+.highlight-chip{border:1px solid #c6b7a3;color:#575043}
+.modal-text .source-note{font-size:11px;border-left:2px solid #b5a38d;padding-left:10px;color:#756b61;margin:15px 0 5px}
+.formula-note{font-size:10px;color:#746b60;background:#f5efe5;padding:5px clamp(20px,5vw,85px) 24px;line-height:1.6;text-align:center}
+.ingredients-section{background:#ede5d9;padding:78px clamp(20px,5vw,86px)}
+.ingredients-wrap{max-width:1300px;margin:auto}
+.ingredients-section h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(40px,5vw,66px);margin:16px 0}
+.ingredients-lead{max-width:640px;color:#70675d;font-size:14px;line-height:1.75;margin:0 0 31px}
+.ingredient-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ingredient-card{background:#fbf8f2;padding:23px 25px;border-top:2px solid #b7a38b}
+.ingredient-card h3{font:400 23px Georgia,serif;margin:0 0 10px}
+.ingredient-card p{font-size:12px;line-height:1.7;color:#72685c;margin:0}
+@media(max-width:800px){.ingredient-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:550px){.ingredient-grid{grid-template-columns:1fr}.ingredients-section{padding:58px 20px}.card-teaser{font-size:11px;min-height:45px}.modal-text .ingredient-chip{padding:7px 9px}}
 </style>
 </head>
 <body>
@@ -45,24 +65,167 @@ dialog{border:0;padding:0;max-width:860px;width:min(860px,calc(100vw - 24px));ma
 <main>
 <section class="hero" id="inicio"><div class="hero-copy"><div class="kicker">Haircare & styling • Lousada</div><h1>O teu<br>estilo.<br><em>As tuas</em><br>regras.</h1><p>Do primeiro cuidado ao último detalhe. Descobre a coleção Johnny Bigodes e encontra os produtos que acompanham o teu estilo, dentro e fora da barbearia.</p><a class="btn" href="#colecao">Explorar coleção <span>↗</span></a></div><div class="hero-art" aria-label="Produtos Johnny Bigodes"><div class="hero-corner">EST. LOUSADA</div><img class="hero-collection" src="assets/capa-johnny-8-produtos.webp" alt="Oito produtos Johnny Bigodes: Dirty Mind 300 e 1000 ml, Fuck Gravity, Foamzilla, Big Ego, Messy Bastard, Sticky Bastard e Holy Cream" fetchpriority="high"><div class="hero-bottom">THE JOHNNY COLLECTION / 2026</div></div></section>
 <div class="benefits"><div><span>✦</span> A linha Johnny Bigodes</div><div><span>✦</span> Cuidados & finalização</div><div><span>✦</span> Disponível na barbearia</div></div>
-<section class="section" id="colecao"><div class="kicker">Descobre a coleção</div><div class="section-intro"><h2>Produtos com<br>personalidade.</h2><p>Vê as embalagens, conhece cada produto e, em breve, acompanha os vídeos de apresentação e aplicação. Compra exclusivamente na Barbearia Johnny Bigodes.</p></div><div class="filters" role="group" aria-label="Categorias de produtos"><button type="button" class="filter-btn active" data-filter="Todos" aria-pressed="true">Todos</button><button type="button" class="filter-btn" data-filter="Champôs" aria-pressed="false">Champôs</button><button type="button" class="filter-btn" data-filter="Finalização" aria-pressed="false">Finalização</button></div><div class="product-count" id="productCount"></div><div class="products" id="products"></div></section>
+<section class="section" id="colecao"><div class="kicker">Descobre a coleção</div><div class="section-intro"><h2>Produtos com<br>personalidade.</h2><p>Descobre os benefícios, os ingredientes em destaque e a forma de aplicação de cada produto. Em breve, acompanha os vídeos de demonstração. Compra exclusivamente na Barbearia Johnny Bigodes.</p></div><div class="filters" role="group" aria-label="Categorias de produtos"><button type="button" class="filter-btn active" data-filter="Todos" aria-pressed="true">Todos</button><button type="button" class="filter-btn" data-filter="Champôs" aria-pressed="false">Champôs</button><button type="button" class="filter-btn" data-filter="Finalização" aria-pressed="false">Finalização</button></div><div class="product-count" id="productCount"></div><div class="products" id="products"></div></section>
+<section class="ingredients-section" id="ingredientes"><div class="ingredients-wrap"><div class="kicker">Conhece o cuidado</div><h2>Ingredientes com propósito.</h2><p class="ingredients-lead">Alguns ingredientes referidos no catálogo Johnny Bigodes e o papel que podem desempenhar no cuidado capilar. As formulações variam consoante o produto.</p><div class="ingredient-grid"><article class="ingredient-card"><h3>Proteína de trigo hidrolisada</h3><p>Ajuda a dar uma sensação de cabelo mais forte.</p></article><article class="ingredient-card"><h3>Óleo de argão</h3><p>Conhecido pelos ácidos gordos e pelo contributo para a hidratação e brilho.</p></article><article class="ingredient-card"><h3>Óleo de jojoba</h3><p>Ajuda a hidratar sem pesar.</p></article><article class="ingredient-card"><h3>Aloé vera</h3><p>Associado a cuidados suaves do couro cabeludo.</p></article><article class="ingredient-card"><h3>Vitamina B5</h3><p>Ajuda a reter humidade e a cuidar da fibra capilar.</p></article><article class="ingredient-card"><h3>Manteiga de karité</h3><p>Ajuda a reter humidade e a reduzir o frizz.</p></article></div></div></section>
 <section class="process" id="como-funciona"><div><div class="kicker">Experiência Johnny Bigodes</div><h2>Conhece.<br>Aprende.<br><em>Domina.</em></h2><p>Cada embalagem pode levar-te a esta página através de um único QR code. Aqui encontras a coleção completa e, à medida que forem produzidos, os vídeos de demonstração de cada produto.</p></div><div class="process-steps"><div class="process-step"><b>01</b><div><h3>Faz scan do QR code</h3><p>Entra no catálogo Johnny Bigodes a partir da embalagem.</p></div></div><div class="process-step"><b>02</b><div><h3>Descobre o produto</h3><p>Conhece as características e consulta as demonstrações quando estiverem disponíveis.</p></div></div><div class="process-step"><b>03</b><div><h3>Compra na barbearia</h3><p>Todos os produtos são adquiridos presencialmente na Johnny Bigodes, em Lousada.</p></div></div></div></section>
 <section class="visit" id="onde-encontrar"><div class="kicker">Venda exclusivamente presencial</div><h2>O teu estilo começa<br>em Lousada.</h2><p>Os produtos deste catálogo não estão disponíveis para compra online. Visita a Barbearia Johnny Bigodes para conhecer a coleção e escolher os teus favoritos.</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Barbearia+Johnny+Bigodes+Lousada" rel="noopener noreferrer" target="_blank" class="btn">Encontrar a barbearia <span>↗</span></a></section>
 </main>
 <footer class="footer"><span>© 2026 JOHNNY BIGODES · LOUSADA</span><span>CATÁLOGO DIGITAL — SEM COMPRA ONLINE</span></footer>
-<dialog id="productDialog" aria-labelledby="modalTitle"><div class="modal-grid"><div class="modal-media"><img id="modalImage" alt=""></div><div class="modal-text"><button type="button" class="modal-close" id="closeModal" aria-label="Fechar">×</button><div class="modal-category" id="modalCategory"></div><h2 id="modalTitle"></h2><p id="modalDescription"></p><span class="modal-label">Como utilizar</span><p id="modalHow"></p><span class="modal-label">Demonstração em vídeo</span><div class="demo"><div class="play">▷</div><div><strong>Vídeo de aplicação em preparação</strong><span>Será adicionado quando tivermos as demonstrações reais.</span></div></div><div class="sale">DISPONÍVEL EXCLUSIVAMENTE NA BARBEARIA JOHNNY BIGODES, LOUSADA.</div></div></div></dialog>
+<div class="formula-note">Características e ingredientes baseados no catálogo disponibilizado. Consulta o rótulo final de cada produto para confirmar a composição e as instruções de segurança.</div>
+<dialog id="productDialog" aria-labelledby="modalTitle"><div class="modal-grid"><div class="modal-media"><img id="modalImage" alt=""></div><div class="modal-text"><button type="button" class="modal-close" id="closeModal" aria-label="Fechar">×</button><div class="modal-category" id="modalCategory"></div><h2 id="modalTitle"></h2><p id="modalDescription"></p><span class="modal-label">Como utilizar</span><p id="modalHow"></p><span class="modal-label">Ingredientes em destaque</span><div class="ingredients-list" id="modalIngredients"></div><div class="highlight-list" id="modalHighlights"></div><p class="source-note" id="modalNotes" hidden></p><span class="modal-label">Demonstração em vídeo</span><div class="demo"><div class="play">▷</div><div><strong>Vídeo de aplicação em preparação</strong><span>Será adicionado quando tivermos as demonstrações reais.</span></div></div><div class="sale">DISPONÍVEL EXCLUSIVAMENTE NA BARBEARIA JOHNNY BIGODES, LOUSADA.</div></div></div></dialog>
 <script>
 // Ficheiros de imagem reais: assets/<nome>.png. Para atualizar uma foto, troca o ficheiro mantendo o nome.
 // Os vídeos podem ser acrescentados mais tarde ao detalhe de cada produto, sem alterar o QR code.
 const catalog=[
-{name:'DIRTY MIND',type:'Champô · 300 ml',category:'Champôs',image:'dirty-mind-300.png',description:'Champô Dirty Mind em embalagem de 300 ml, identificado com óleo de menta.',how:'Aplica uma pequena quantidade no cabelo molhado, massaja suavemente e enxagua. Segue sempre as instruções do rótulo.'},
-{name:'DIRTY MIND',type:'Champô · 1000 ml',category:'Champôs',image:'dirty-mind-1000.png',description:'Champô Dirty Mind no formato de 1000 ml, com óleo de menta indicado na embalagem.',how:'Usa no cabelo molhado e enxagua bem. Respeita as instruções que acompanham o produto.'},
-{name:'FUCK GRAVITY',type:'Laca · 300 ml',category:'Finalização',image:'fuck-gravity.png',description:'Laca de finalização Fuck Gravity, em aerossol de 300 ml; a embalagem refere filtro UV.',how:'Vaporiza apenas conforme as indicações do fabricante, mantendo a distância recomendada e evitando os olhos e fontes de ignição.'},
-{name:'FOAMZILLA',type:'Mousse · 300 ml',category:'Finalização',image:'foamzilla.png',description:'Mousse capilar Foamzilla em embalagem de 300 ml, com vitamina B5 indicada no rótulo.',how:'Distribui a quantidade indicada pelo fabricante, modela com as mãos e finaliza como preferires.'},
-{name:'BIG EGO',type:'Gel · 150 ml',category:'Finalização',image:'big-ego.png',description:'Gel capilar Big Ego em boião de 150 ml.',how:'Aplica uma pequena quantidade de produto e distribui pelo cabelo para modelar o penteado.'},
-{name:'MESSY BASTARD',type:'Pasta · 100 ml',category:'Finalização',image:'messy-bastard.png',description:'Pasta de textura Messy Bastard, em boião de 100 ml.',how:'Espalha uma pequena quantidade entre as mãos e trabalha o cabelo para criar textura.'},
-{name:'STICKY BASTARD',type:'Fibra · 100 ml',category:'Finalização',image:'sticky-bastard.png',description:'Fibra capilar Sticky Bastard em boião de 100 ml.',how:'Trabalha uma pequena quantidade entre os dedos e aplica para modelar o cabelo.'},
-{name:'HOLY CREAM',type:'Creme · 100 ml',category:'Finalização',image:'holy-cream.png',description:'Creme capilar Holy Cream, em boião de 100 ml.',how:'Começa com uma pequena quantidade, distribui pelo cabelo e penteia normalmente.'},
+  {
+    "name": "DIRTY MIND",
+    "type": "Champô · 300 ml",
+    "category": "Champôs",
+    "image": "dirty-mind-300.png",
+    "description": "Refresca o couro cabeludo. A limpeza diária suave ajuda a equilibrar a oleosidade sem deixar o cabelo seco.",
+    "how": "Massaja suavemente o couro cabeludo com o cabelo molhado e enxagua bem. Adequado à rotina diária, incluindo depois do desporto.",
+    "ingredients": [
+      "Cafeína",
+      "Aloé vera"
+    ],
+    "highlights": [
+      "Limpeza suave",
+      "Sensação de frescura",
+      "Rotina diária"
+    ],
+    "teaser": "Limpeza diária que refresca o couro cabeludo.",
+    "notes": "O catálogo menciona cafeína e aloé vera; a embalagem apresentada destaca óleo de menta. Confirma os ingredientes na rotulagem final."
+  },
+  {
+    "name": "DIRTY MIND",
+    "type": "Champô · 1000 ml",
+    "category": "Champôs",
+    "image": "dirty-mind-1000.png",
+    "description": "O cuidado diário Dirty Mind em formato de 1000 ml: refresca o couro cabeludo e limpa de forma suave, ajudando a controlar a oleosidade sem ressecar.",
+    "how": "Massaja suavemente o couro cabeludo com o cabelo molhado e enxagua bem. Pode integrar a rotina diária e a lavagem após o desporto.",
+    "ingredients": [
+      "Cafeína",
+      "Aloé vera"
+    ],
+    "highlights": [
+      "Formato 1000 ml",
+      "Limpeza suave",
+      "Sensação de frescura"
+    ],
+    "teaser": "O champô de uso diário em formato profissional.",
+    "notes": "O catálogo menciona cafeína e aloé vera; a embalagem apresentada destaca óleo de menta. Confirma os ingredientes na rotulagem final."
+  },
+  {
+    "name": "FUCK GRAVITY",
+    "type": "Laca · 300 ml",
+    "category": "Finalização",
+    "image": "fuck-gravity.png",
+    "description": "Pulverização microfina para uma fixação X-Strong uniforme e sem resíduos visíveis. Ajuda a manter o penteado e sai com a escova; com filtro UV indicado na coleção.",
+    "how": "Pulveriza a 25–30 cm de distância, como toque final, em local ventilado. Aplica em camadas para aumentar a fixação. Evita o contacto com os olhos e as fontes de ignição.",
+    "ingredients": [
+      "Pró-vitamina B5",
+      "Filtro UV"
+    ],
+    "highlights": [
+      "Fixação X-Strong",
+      "Pulverização fina",
+      "Finalização duradoura"
+    ],
+    "teaser": "Fixação X-Strong e pulverização microfina."
+  },
+  {
+    "name": "FOAMZILLA",
+    "type": "Mousse · 300 ml",
+    "category": "Finalização",
+    "image": "foamzilla.png",
+    "description": "Uma mousse de volume com polímeros fixadores para dar corpo ao cabelo desde a raiz. A fórmula descrita no catálogo combina fixação X-Strong e pró-vitamina B5.",
+    "how": "Agita bem. Distribui no cabelo húmido uma porção aproximadamente do tamanho de uma bola de ténis e modela com o secador. Ajusta a quantidade ao comprimento do cabelo.",
+    "ingredients": [
+      "Pró-vitamina B5",
+      "Filtro UV"
+    ],
+    "highlights": [
+      "Volume desde a raiz",
+      "Fixação X-Strong",
+      "Styling com secador"
+    ],
+    "teaser": "Volume desde a raiz, com fixação forte."
+  },
+  {
+    "name": "BIG EGO",
+    "type": "Gel · 150 ml",
+    "category": "Finalização",
+    "image": "big-ego.png",
+    "description": "Gel de volume pensado para dar corpo à raiz, sem pesar nem colar o cabelo. O catálogo destaca proteína de arroz, extrato de bambu e fixação flexível.",
+    "how": "Aplica na raiz do cabelo húmido e modela com o secador. Para mais volume, podes utilizar uma escova redonda.",
+    "ingredients": [
+      "Proteína de arroz",
+      "Extrato de bambu",
+      "Vitamina B5"
+    ],
+    "highlights": [
+      "Volume na raiz",
+      "Fixação flexível",
+      "Sem efeito pesado"
+    ],
+    "teaser": "Mais corpo e volume, com fixação flexível."
+  },
+  {
+    "name": "MESSY BASTARD",
+    "type": "Pasta de textura · 100 ml",
+    "category": "Finalização",
+    "image": "messy-bastard.png",
+    "description": "O caulino absorve a oleosidade e ajuda a criar um acabamento mate; os polímeros flexíveis permitem manter o penteado sem o endurecer.",
+    "how": "Aquece uma pequena quantidade entre as palmas das mãos e trabalha no cabelo seco. Aplica em camadas até conseguires a textura pretendida.",
+    "ingredients": [
+      "Caulino",
+      "Proteína de arroz",
+      "Extrato de bambu"
+    ],
+    "highlights": [
+      "Acabamento mate",
+      "Textura definida",
+      "Modelação flexível"
+    ],
+    "teaser": "Textura mate, sem rigidez."
+  },
+  {
+    "name": "STICKY BASTARD",
+    "type": "Fibra · 100 ml",
+    "category": "Finalização",
+    "image": "sticky-bastard.png",
+    "description": "Fibras elásticas e aminoácidos de queratina ajudam a criar aderência, definição e uma fixação forte que continua a ser remodelável.",
+    "how": "Espalha bem uma quantidade do tamanho de uma ervilha entre as mãos. Aplica no cabelo seco ou húmido e modela conforme o penteado.",
+    "ingredients": [
+      "Aminoácidos de queratina",
+      "Proteína de trigo"
+    ],
+    "highlights": [
+      "Fixação forte",
+      "Textura com aderência",
+      "Remodelável"
+    ],
+    "teaser": "Aderência e definição com fixação remodelável."
+  },
+  {
+    "name": "HOLY CREAM",
+    "type": "Creme modelador · 100 ml",
+    "category": "Finalização",
+    "image": "holy-cream.png",
+    "description": "Um creme modelador que ajuda a proteger da humidade e a controlar o frizz. O catálogo destaca óleo de argão e manteiga de karité para suavizar o cabelo.",
+    "how": "Distribui no cabelo húmido antes de utilizar o secador ou aplica uma pequena quantidade no cabelo seco para finalizar.",
+    "ingredients": [
+      "Óleo de argão",
+      "Manteiga de karité",
+      "Óleo de jojoba"
+    ],
+    "highlights": [
+      "Controlo do frizz",
+      "Suavidade",
+      "Proteção da humidade"
+    ],
+    "teaser": "Suavidade e controlo do frizz."
+  }
 ];
 const productContainer=document.getElementById('products');
 const productDialog=document.getElementById('productDialog');
@@ -70,9 +233,13 @@ let activeFilter='Todos';
 function productImage(p){return 'assets/'+p.image}
 function drawProducts(){const filtered=catalog.filter(p=>activeFilter==='Todos'||p.category===activeFilter);
  document.getElementById('productCount').textContent=filtered.length+' '+(filtered.length===1?'produto':'produtos')+' na coleção';
- productContainer.innerHTML=filtered.map(p=>{const index=catalog.indexOf(p);const jar=p.image.includes('ego')||p.image.includes('bastard')||p.image.includes('cream')||p.image.includes('repair');return `<article class="product"><div class="product-photo"><span class="index">${String(index+1).padStart(2,'0')}</span><img src="${productImage(p)}" class="${jar?'jar ':''}" alt="Embalagem Johnny Bigodes ${p.name} ${p.type}" loading="lazy" decoding="async"></div><div class="product-bottom"><small>${p.category}</small><h3>${p.name}</h3><div class="kind">${p.type}</div><button type="button" data-open="${index}" aria-label="Conhecer ${p.name} ${p.type}">Conhecer produto <span>↗</span></button></div></article>`}).join('');}
+ productContainer.innerHTML=filtered.map(p=>{const index=catalog.indexOf(p);const jar=p.image.includes('ego')||p.image.includes('bastard')||p.image.includes('cream')||p.image.includes('repair');return `<article class="product"><div class="product-photo"><span class="index">${String(index+1).padStart(2,'0')}</span><img src="${productImage(p)}" class="${jar?'jar ':''}" alt="Embalagem Johnny Bigodes ${p.name} ${p.type}" loading="lazy" decoding="async"></div><div class="product-bottom"><small>${p.category}</small><h3>${p.name}</h3><div class="kind">${p.type}</div><p class="card-teaser">${p.teaser}</p><button type="button" data-open="${index}" aria-label="Conhecer ${p.name} ${p.type}">Conhecer produto <span>↗</span></button></div></article>`}).join('');}
 document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{activeFilter=btn.dataset.filter;document.querySelectorAll('.filter-btn').forEach(b=>{b.classList.toggle('active',b===btn);b.setAttribute('aria-pressed',String(b===btn))});drawProducts()}));
-productContainer.addEventListener('click',(event)=>{const btn=event.target.closest('[data-open]');if(!btn)return;const p=catalog[Number(btn.dataset.open)];if(!p)return;document.getElementById('modalTitle').textContent=p.name;document.getElementById('modalCategory').textContent=p.type;document.getElementById('modalDescription').textContent=p.description;document.getElementById('modalHow').textContent=p.how;const pic=document.getElementById('modalImage');pic.src=productImage(p);pic.alt='Embalagem de '+p.name;productDialog.showModal();document.body.classList.add('no-scroll')});
+productContainer.addEventListener('click',(event)=>{const btn=event.target.closest('[data-open]');if(!btn)return;const p=catalog[Number(btn.dataset.open)];if(!p)return;document.getElementById('modalTitle').textContent=p.name;document.getElementById('modalCategory').textContent=p.type;document.getElementById('modalDescription').textContent=p.description;document.getElementById('modalHow').textContent=p.how;
+document.getElementById('modalIngredients').replaceChildren(...p.ingredients.map(name=>{const e=document.createElement('span');e.className='ingredient-chip';e.textContent=name;return e;}));
+document.getElementById('modalHighlights').replaceChildren(...p.highlights.map(name=>{const e=document.createElement('span');e.className='highlight-chip';e.textContent='✓ '+name;return e;}));
+const notes=document.getElementById('modalNotes');notes.textContent=p.notes||'';notes.hidden=!p.notes;
+const pic=document.getElementById('modalImage');pic.src=productImage(p);pic.alt='Embalagem de '+p.name;productDialog.showModal();document.body.classList.add('no-scroll')});
 function closeDialog(){productDialog.close();document.body.classList.remove('no-scroll')}
 document.getElementById('closeModal').addEventListener('click',closeDialog);
 productDialog.addEventListener('click',e=>{if(e.target===productDialog)closeDialog()});productDialog.addEventListener('close',()=>document.body.classList.remove('no-scroll'));
